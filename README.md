@@ -1,26 +1,62 @@
-# Travel Advisor
+# Travel Advisor – Google Maps Based React Application
+
+Travel Advisor is a location-based web application built using React.js that helps users discover nearby restaurants, hotels, and tourist attractions. The application integrates Google Maps with external travel data APIs to provide real-time, interactive, and location-aware recommendations.
+
+---
 
 ![Travel Advisor](https://i.ibb.co/qph2cZn/image.pngg)
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+## Overview
 
-## Introduction
-Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs, data filtering and much more, this Travel Advisor App is the best Maps Application that you can currently find on YouTube and on the entire internet.
+The application automatically detects the user’s geographical location and displays an interactive map along with a list of nearby places. Users can search for locations manually, explore places directly on the map, and filter results based on ratings. Data is fetched dynamically from third-party APIs and rendered efficiently using React’s component-based architecture.
 
-In this video, you'll learn:
+This project demonstrates practical usage of API integration, map-based UI development, and modern frontend best practices.
 
-- Advanced React Best Practices such as folder & file structure, hooks and refs
-- Creating a User Interface using Material UI
-- Working with Google Maps API
-- And most importantly fetching data from unlimited sources using RapidAPI
-- Essentially, you'll become the master of working with APIs
+---
 
-[RapidAPI](https://rapidapi.com/hub?utm_source=youtube.com/JavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
-[Travel Advisor API](https://rapidapi.com/apidojo/api/travel-advisor?utm_source=youtube.com/JavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
-[Open Weather Map API](https://rapidapi.com/community/api/open-weather-map?utm_source=youtube.com/JavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
+## Features
 
-## Stay up to date with new projects
-New major projects coming soon, subscribe to the mailing list to stay up to date https://javascriptmastery.eo.page/mailing-list.
+- Real-time geolocation detection
+- Interactive Google Maps with custom markers
+- Nearby restaurants, hotels, and attractions listing
+- Manual location search
+- Rating-based filtering
+- Responsive and clean user interface
+- Dynamic data fetching from external APIs
 
-Setup: run ```npm i && npm start``` to start the development server
+---
+
+## Tech Stack
+
+- **Frontend:** React.js
+- **UI Framework:** Material-UI
+- **Maps:** Google Maps JavaScript API
+- **APIs:** RapidAPI (Travel Advisor API, OpenWeatherMap)
+- **HTTP Client:** Axios
+- **Build Tool:** Create React App
+
+---
+
+## Application Workflow
+
+1. User opens the application
+2. Browser geolocation API retrieves latitude and longitude
+3. Google Maps loads centered on the detected location
+4. Travel data is fetched from RapidAPI based on coordinates
+5. Results are displayed on the map and in a list view
+6. User can search, filter, and interact with map markers
+
+---
+
+## Project Structure
+
+src/
+├── components/
+│ ├── Header
+│ ├── List
+│ ├── Map
+│ └── PlaceDetails
+├── api/
+│ └── index.js
+├── App.js
+└── index.js
